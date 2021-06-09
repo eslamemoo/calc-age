@@ -1,0 +1,30 @@
+/*  quiz page  */
+.q-container {
+  padding: 20px;
+  direction: rtl !important;
+}
+.q-label {
+  display: block;
+  box-shadow: 0px 0px 5px 0px #00000080;
+  padding: 4px;
+  border-radius: 6px;
+  text-align: right!important;
+}
+
+.q-container > input[type="radio"] {
+  display: none;
+}
+.q-container > input[type="radio"]:checked + .q-label {
+  font-size: 17px;
+  background-color: #fbc77e6f;
+  border-left: solid 4px #fbc77e;
+}
+
+.q-container >input[type="radio"]:checked + .q-label::after {
+  content: "*";
+  float: left;
+  opacity: 0.5;
+  margin-left: 5px;
+  position: relative;
+  top: 3px;
+}
